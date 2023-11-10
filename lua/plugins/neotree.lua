@@ -1,10 +1,20 @@
 return {
     "nvim-neo-tree/neo-tree.nvim",
+    config = true,
     branch = "v3.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
-      -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-    }
+    },
+    opts = {
+      enable_git_status = true,
+      enable_diagnostics = true,
+      filesystem = {
+        hide_dotfiles = false,
+      },
+      window = {
+        width = 30,
+      },
+    },
 }

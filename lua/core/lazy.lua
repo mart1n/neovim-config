@@ -23,6 +23,41 @@ end
 vim.keymap.set("", "<Space>", "<Nop>", {noremap=true, silent=true})
 vim.g.mapleader = " "
 
+-- Lazy Options
+local opts = {
+  performance = {
+    rtp = {
+      disabled_plugins = {
+        "2html_plugin",
+        "getscript",
+        "getscriptPlugin",
+        "gzip",
+        "logipat",
+        "netrw",
+        "netrwPlugin",
+        "netrwSettings",
+        "netrwFileHandlers",
+        "matchit",
+        "tar",
+        "tarPlugin",
+        "rrhelper",
+        "spellfile_plugin",
+        "vimball",
+        "vimballPlugin",
+        "zip",
+        "zipPlugin",
+        "tutor",
+        "rplugin",
+        "synmenu",
+        "optwin",
+        "compiler",
+        "bugreport",
+        "ftplugin",
+      },
+    },
+  },
+}
+
 -- Load plugins from specifications
 -- (The leader key must be set before this)
-lazy.setup("plugins")
+lazy.setup("plugins", opts)
