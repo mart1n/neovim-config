@@ -43,7 +43,8 @@ opt.laststatus=3            -- Set global statusline
 -----------------------------------------------------------
 -- Neovim Colorscheme
 -----------------------------------------------------------
-vim.cmd [[colorscheme PaperColor]]
+--vim.cmd [[colorscheme PaperColor]]
+vim.cmd [[colorscheme catppuccin]]
 
 -----------------------------------------------------------
 -- Tabs, indent
