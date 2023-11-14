@@ -70,6 +70,10 @@ keymap('n', '<leader>lr', ':Telescope lsp_references<CR>', opts)
 keymap('n', '<leader>li', ':Telescope lsp_implementations<CR>', opts)
 keymap('n', '<leader>ls', ':Telescope lsp_document_symbols<CR>', opts)
 keymap('n', '<leader>lt', ':Telescope treesitter<CR>', opts)
+keymap('n', '<leader>ta', ':Telescope aerial<CR>', opts)
+
+-- Aerial
+keymap('n', '<leader>a', ':AerialToggle<CR>', opts)
 
 -- Trouble Toggle
 keymap('n', '<leader>d', ':TroubleToggle<CR>', opts)
